@@ -78,7 +78,7 @@ class BookController extends Controller
            'id_user'=>$request->id_user
         ]);
         
-        return redirect('books')->with('successo','Livro adastrado com sucesso!');
+        return redirect('books')->with('successo','Livro cadastrado com sucesso!');
     }
 
 
