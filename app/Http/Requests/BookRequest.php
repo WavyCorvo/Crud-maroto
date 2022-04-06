@@ -21,8 +21,12 @@ class BookRequest extends FormRequest
     public function messages()
     {
         return [
+             return [
             'title.required' => 'Coloque o título vacilão!',
-            'pages.numeric'  => 'Apenas números! Sem gracinha, em!',
+            'pages.numeric|required'  => 'Apenas números! Sem gracinha, em!',
+            'price.numeric|required'  => 'só números',
+            'id_user.required'=>    'escolha algo',
+       
         ];
     }
 }
